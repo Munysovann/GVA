@@ -1,0 +1,225 @@
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+body{
+    background: linear-gradient(rgba(4, 9, 30, 0.7), rgba(4,9,30,0.7)), url(Contact\ Background.jpg);
+}
+.navlist
+{
+    width: 100%;
+    padding: 5px 10vw;
+    background: rgba(18, 18, 39, 0.9);
+}
+.navlist ul
+{
+    display: flex;
+    list-style: none;
+}
+.navlist ul li:first-child
+{
+    flex: 1;
+}
+.navlist ul h4
+{
+    font-family: 'Poppins', sans-serif;
+    color: #fff;
+    font-size: 25px;
+}
+.navlist ul a 
+{
+    margin-left: 20px;
+    text-decoration: none;
+    color: #fff;
+}
+.navlist ul a:hover
+{
+    color: #f44336;
+}
+.Contact
+{
+    position: relative;
+    width: 100%;
+    padding: 40px 100px;
+}
+.Contact .title
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 2em;
+}
+.Contact .title h2
+{
+    font-weight: 500;
+    color: #fff;
+}
+
+.form
+{
+    grid-area: form;
+}
+.info
+{
+    grid-area: info;
+}
+.map
+{
+    grid-area: map;
+}
+.contact
+{
+    padding: 40px;
+    background: #fff;
+    box-shadow: 0 5px 35px rgba(0, 0, 0, 0.15);
+}
+.box
+{
+    position: relative;
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    grid-template-rows: 5fr 4fr;
+    grid-template-areas: 
+    "form info" 
+    "form map";
+    grid-gap: 20px;
+    margin-top: 20px;
+}
+.contact h3
+{
+    color: #0e3959;
+    font-weight: 500;
+    font-size: 1.4em;
+    margin-bottom: 10px;
+}
+/* form */
+.formBox
+{
+    position: relative;
+    width: 100%;
+}
+.formBox .row50
+{
+    display: flex;
+    gap: 20px;
+}
+.inputBox
+{
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 10px;
+    width: 50%;
+}
+.formBox .row100 .inputBox
+{
+    width: 100%;
+}
+.inputBox span
+{
+    color: #f44336;
+    margin-top: 10px;
+    margin-bottom: 5px;
+    font-weight: 500;
+}
+.inputBox input
+{
+    padding: 10px;
+    font-size: 1.1em;
+    outline: none;
+    border: 1px solid #333;
+}
+.inputBox textarea
+{
+    padding: 10px;
+    font-size: 1.1em;
+    outline: none;
+    border: 1px solid #333;
+    resize: none;
+    min-height: 200px;
+    margin-bottom: 10px;
+}
+.inputBox input[type="submit"]
+{
+    background: #f44336;
+    color: #fff;
+    border: none;
+    border-radius: 30px;
+    font-size: 1.1em;
+    max-width: 120px;
+    font-weight: 500;
+    cursor: pointer;
+    padding: 14px 15px;
+}
+.inputBox ::placeholder
+{
+    color: #999;
+}
+/* info */
+.info
+{
+    background: #fd655a;
+}
+.info h3
+{
+    color: #fff;
+}
+.info .infoBox div
+{
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+}
+.info .infoBox div span
+{
+    min-height: 40px;
+    height: 40px;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.6em;
+    margin-right: 5px;
+}
+.info .infoBox div p
+{
+    color: #fff;
+    font-size: 1.1em;
+}
+.info .infoBox div a
+{
+    color: #fff;
+    text-decoration: none;
+    font-size: 1.1em;
+}
+.sci
+{
+    margin-top: 40px;
+    display: flex;
+}
+.sci li
+{
+    list-style: none;
+    margin-right: 15px;
+}
+.sci li a
+{
+    color: #fff;
+    font-size: 1.3em;
+    text-decoration: none;
+}
+.sci li a:hover
+{
+    color: rgb(93, 156, 252);
+}
+.map
+{
+    padding: 0;
+}
+.map iframe
+{
+    width: 100%;
+    height: 100%;
+}
